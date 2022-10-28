@@ -6,8 +6,8 @@
   "description": "Test for Ditributed Systems Course",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test/cpu.js",
-    "dev": "node ./index.js"
+    "test": "nodemon ./test/cpu.js",
+    "start": "nodemon ./index.js"
   },
   "dependencies": {
     "express": "^4.18.2",

@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-
+const fs = require('fs')
 // Home
 router.get('/', (req, res) => {
     res.send("Home")
@@ -14,6 +14,11 @@ router.get('/cpu', (req, res) => {
 })
 // define the io-intensive route
 router.get('/io', (req, res) => {
+    const filename = "./temp/file" + Math.random() * 10000
+    for (let i = 0; i < 100; i++) {
+        fs.appendFileSync(filename, 'Hey there!');
+    }
+    //fs.rmSync(filename);
     res.send('io')
 })
 
