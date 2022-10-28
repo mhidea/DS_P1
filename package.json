@@ -1,0 +1,16 @@
+{
+  "name": "test_server",
+  "version": "1.0.0",
+  "author": "MohammadHassan Haghighifard",
+  "license": "ISC",
+  "description": "Test for Ditributed Systems Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/cpu.js",
+    "dev": "node ./index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "loadtest": "^5.2.0"
+  }
+}
