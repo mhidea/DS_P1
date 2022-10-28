@@ -6,7 +6,8 @@
   "description": "Test for Ditributed Systems Course",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon ./test/cpu.js",
+    "cpu-test": "node ./test/cpu.js",
+    "io-test": "node ./test/io.js",
     "start": "nodemon ./index.js"
   },
   "dependencies": {

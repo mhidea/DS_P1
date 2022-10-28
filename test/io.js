@@ -9,7 +9,7 @@
 const loadtest = require('loadtest');
 
 const options = {
-    url: 'http://169.254.45.41:3000/cpu',
+    url: 'http://169.254.45.41:3000/io',
     concurrency: 40,
     method: 'GET',
     body: '',
@@ -26,5 +26,5 @@ loadtest.loadTest(options, (error, results) => {
         return console.error('Got an error: %s', error);
     }
     console.log(results);
-    console.log('CPU test run successfully');
+    console.log('IO test run successfully');
 });
