@@ -1,8 +1,8 @@
 config:
   target: "http://169.254.45.41:3000"
   phases:
-    - duration: 5
-      arrivalRate: 300
+    - duration: 1
+      arrivalRate: 1
       name: load
 
 
