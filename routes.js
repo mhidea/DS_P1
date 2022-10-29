@@ -1,15 +1,16 @@
 const express = require('express')
 const router = express.Router()
 const fs = require('fs')
+const m = require('mathjs')
 // Home
 router.get('/', (req, res) => {
     res.send("Home")
 })
 // define the cpu-intensive route
 router.get('/cpu', (req, res) => {
-    let r = 0
-    for (let i = 0; i < 15000; i++) {
-        Math.atan(i) + Math.atanh(i);
+    for (let i = 0; i < 10; i++) {
+        let mr = m.random([100, 100])
+        m.inv(mr)
     }
     res.send("Done.")
 })
