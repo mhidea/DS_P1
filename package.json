@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "author": "MohammadHassan Haghighifard",
   "license": "ISC",
-  "description": "Test for Ditributed Systems Course",
+  "description": "Test for Distributed Systems Course",
   "main": "index.js",
   "scripts": {
     "cpu-test": "node ./test/cpu.js",
     "io-test": "node ./test/io.js",
+    "cpu-art": "artillery run ./test/cpu.yml",
+    "io-art": "artillery run ./test/io.yml",
     "start": "nodemon ./index.js"
   },
   "dependencies": {

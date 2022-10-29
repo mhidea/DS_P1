@@ -10,11 +10,11 @@ const loadtest = require('loadtest');
 
 const options = {
     url: 'http://169.254.45.41:3000/io',
-    concurrency: 40,
+    concurrency: 2,
     method: 'GET',
     body: '',
-    requestsPerSecond: 5000,
-    maxSeconds: 300,
+    requestsPerSecond: 50,
+    maxSeconds: 10,
     requestGenerator: (params, options, client, callback) => {
         const request = client(options, callback);
         return request;

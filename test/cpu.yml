@@ -1,0 +1,26 @@
+config:
+  target: "http://169.254.45.41:3000"
+  phases:
+    - duration: 5
+      arrivalRate: 5
+      name: Warm up
+    - duration: 5
+      arrivalRate: 10
+      rampTo: 50
+      name: Ramp up load
+    - duration: 5
+      arrivalRate: 100
+      name: Sustained load
+
+
+scenarios:
+  - name: "CPU load test"
+    flow:
+      - log: "New virtual user running"
+      - get:
+          url: "/cpu"
+  - name: "IO load test"
+    flow:
+      - log: "New virtual user running"
+      - get:
+          url: "/io"
