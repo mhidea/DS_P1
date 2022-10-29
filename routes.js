@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 })
 // define the cpu-intensive route
 router.get('/cpu', (req, res) => {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 5; i++) {
         let mr = m.random([100, 100])
         m.inv(mr)
     }
