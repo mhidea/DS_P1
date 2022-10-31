@@ -1,8 +1,8 @@
 config:
   target: "http://169.254.45.41:3000"
   phases:
-    - duration: 1
-      arrivalRate: 1
+    - duration: 5
+      arrivalRate: 40
       name: load
 
 
@@ -10,4 +10,4 @@ scenarios:
   - name: "CPU load test"
     flow:
       - get:
-          url: "/io"
+          url: "/cpu"

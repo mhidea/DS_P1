@@ -6,10 +6,10 @@
   "description": "Test for Distributed Systems Course",
   "main": "index.js",
   "scripts": {
-    "cpu-test": "node ./test/cpu.js",
-    "io-test": "node ./test/io.js",
-    "cpu-art": "artillery run ./test/cpu.yml",
-    "io-art": "artillery run ./test/io.yml",
+    "load-cpu": "node ./test/cpu.js",
+    "load-io": "node ./test/io.js",
+    "art-cpu": "artillery run ./test/cpu.yml",
+    "art-io": "artillery run ./test/io.yml",
     "start": "nodemon ./index.js"
   },
   "dependencies": {
