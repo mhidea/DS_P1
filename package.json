@@ -4,14 +4,10 @@
   "author": "MohammadHassan Haghighifard",
   "license": "ISC",
   "description": "Test for Distributed Systems Course",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "load-recursive": "node ./test/load-recursive.js",
-    "load-cpu": "node ./test/load-cpu.js",
-    "load-loop": "node ./test/load-loop.js",
-    "art-cpu": "artillery run ./test/cpu.yml",
-    "art-io": "artillery run ./test/io.yml",
-    "start": "nodemon ./index.js"
+    "loop": "node ./loop.js",
+    "start": "nodemon ./server.js"
   },
   "dependencies": {
     "artillery": "^2.0.0-26",
