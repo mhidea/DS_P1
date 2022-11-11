@@ -1,0 +1,13 @@
+{
+    "actionButtons": {
+        "defaultColor": "#1111ff",
+        "commands": [
+            {
+                "name": "Run",
+                "color": "white",
+                "singleInstance": true,
+                "command": "node ${file}", // This is executed in the terminal.
+            },
+        ]
+    }
+}

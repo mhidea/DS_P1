@@ -1,0 +1,1 @@
+[{"data":[179.14999999999998,195.4],"label":"cpu","tension":0.1,"fill":false,"backgroundColor":"rgb(77,137,249)","borderColor":"rgba(77,137,249,.3)"},{"data":[152.3,162.1],"label":"io","tension":0.1,"fill":false,"backgroundColor":"rgb(0,184,138)","borderColor":"rgba(0,184,138,.3)"}]
