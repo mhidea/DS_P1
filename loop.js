@@ -6,7 +6,6 @@ const firstRps = 5;
 const lastRps = 35;
 const rpsStep = 5;
 const iterationNum = 2;
-const baseUrl = 'http://169.254.45.41:3000/'
 const filaname = "./loop.png"
 
 const requestOptions = {
@@ -25,6 +24,7 @@ const datasets = [
         "fill": false,
         "backgroundColor": "rgb(77,137,249)",
         "borderColor": "rgba(77,137,249,.3)",
+        "url": "http://169.254.45.41:3000/cpu"
 
     },
     {
@@ -34,7 +34,7 @@ const datasets = [
         "fill": false,
         "backgroundColor": "rgb(0,184,138)",
         "borderColor": "rgba(0,184,138,.3)",
-
+        "url": "http://169.254.45.41:3000/io"
     }
 ]
 
@@ -59,7 +59,7 @@ function name(datasetIndex, dataIndex, iteration) {
     if (dataIndex == 0 && iteration == 0) {
         console.log('#############################');
         console.log("New path " + datasets[datasetIndex]['label']);
-        requestOptions.url = baseUrl + datasets[datasetIndex]['label']
+        requestOptions.url = datasets[datasetIndex]['url']
     }
 
     loadtest.loadTest(requestOptions, (error, results) => {
