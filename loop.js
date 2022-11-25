@@ -24,7 +24,7 @@ const datasets = [
         "fill": false,
         "backgroundColor": "rgb(77,137,249)",
         "borderColor": "rgba(77,137,249,.3)",
-        "url": "http://169.254.63.180:3000/io"
+        "url": "http://169.254.63.180:3000/cpu"
 
     },
     {
@@ -34,7 +34,7 @@ const datasets = [
         "fill": false,
         "backgroundColor": "rgb(0,184,138)",
         "borderColor": "rgba(0,184,138,.3)",
-        "url": "http://169.254.63.180:8000/io"
+        "url": "http://169.254.63.180:8000/cpu"
     }
 ]
 
