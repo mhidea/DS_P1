@@ -3,9 +3,9 @@ const loadtest = require('loadtest');
 const lineChart = require('./plot');
 const fs = require("fs")
 const firstRps = 5;
-const lastRps = 35;
+const lastRps = 85;
 const rpsStep = 5;
-const iterationNum = 2;
+const iterationNum = 4;
 const filaname = "./loop.png"
 
 const requestOptions = {
@@ -19,22 +19,22 @@ const requestOptions = {
 const datasets = [
     {
         "data": [],
-        "label": "cpu",
+        "label": "node",
         "tension": 0.1,
         "fill": false,
         "backgroundColor": "rgb(77,137,249)",
         "borderColor": "rgba(77,137,249,.3)",
-        "url": "http://169.254.45.41:3000/cpu"
+        "url": "http://127.0.0.1:3000/io"
 
     },
     {
         "data": [],
-        "label": "io",
+        "label": "java",
         "tension": 0.1,
         "fill": false,
         "backgroundColor": "rgb(0,184,138)",
         "borderColor": "rgba(0,184,138,.3)",
-        "url": "http://169.254.45.41:3000/io"
+        "url": "http://127.0.0.1:8000/io"
     }
 ]
 
